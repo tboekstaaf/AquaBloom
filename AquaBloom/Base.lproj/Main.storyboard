@@ -15,38 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-0g-IUW">
-                                <rect key="frame" x="333" y="59" width="34" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Skip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5O-0g-IUW">
+                                <rect key="frame" x="333" y="63" width="34" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Pdy-NY-SRa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
                                 <color key="textColor" red="0.090196078431372548" green="0.5725490196078431" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-Dm-TXz">
-                                <rect key="frame" x="110" y="202" width="173" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-Dm-TXz">
+                                <rect key="frame" x="110" y="218" width="173" height="170"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRd-tJ-0wB">
-                                <rect key="frame" x="25" y="737" width="342" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="Loginbox"/>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Log in">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Nunito-Regular"/>
-                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x38-Xf-1GZ">
-                                <rect key="frame" x="121" y="558" width="151" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" minimumFontSize="16" background="textbox" translatesAutoresizingMaskIntoConstraints="NO" id="DFC-h6-so7">
+                                <rect key="frame" x="25" y="453" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="khI-Ob-xcv"/>
+                                </constraints>
+                                <color key="textColor" red="0.0039215686274509803" green="0.29411764705882354" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartQuotesType="no"/>
+                            </textField>
+                            <textField clearsContextBeforeDrawing="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" minimumFontSize="16" background="textbox" translatesAutoresizingMaskIntoConstraints="NO" id="TFe-KF-WKr">
+                                <rect key="frame" x="25" y="528" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="GLZ-TB-vcm"/>
+                                </constraints>
+                                <color key="textColor" red="0.0039215686274509803" green="0.29411764705882354" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x38-Xf-1GZ">
+                                <rect key="frame" x="106" y="592" width="181" height="31"/>
                                 <color key="tintColor" red="0.090196078430000007" green="0.57254901960000004" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -56,25 +56,73 @@
                                                 <color key="NSColor" red="0.090196078431372548" green="0.5725490196078431" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="14" name="Nunito-Regular"/>
                                                 <font key="NSOriginalFont" size="12" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFC-h6-so7">
-                                <rect key="frame" x="148" y="409" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRd-tJ-0wB">
+                                <rect key="frame" x="25" y="763" width="343" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="hec-Fx-qMy"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Loginbox"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log in">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="20" name="Nunito-Bold"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0039215686274509803" green="0.29411764705882354" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="rRd-tJ-0wB" firstAttribute="centerX" secondItem="jbk-Dm-TXz" secondAttribute="centerX" id="296-xx-z2r"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Nu-hG-o0w"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="centerX" secondItem="jbk-Dm-TXz" secondAttribute="centerX" id="7OD-UW-YgZ"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="trailing" secondItem="B5O-0g-IUW" secondAttribute="trailing" id="7to-3t-CeA"/>
+                            <constraint firstItem="B5O-0g-IUW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="333" id="Giz-Aq-1Y7"/>
+                            <constraint firstItem="x38-Xf-1GZ" firstAttribute="top" secondItem="TFe-KF-WKr" secondAttribute="bottom" constant="9" id="K2O-ZQ-Yr9"/>
+                            <constraint firstItem="x38-Xf-1GZ" firstAttribute="centerX" secondItem="jbk-Dm-TXz" secondAttribute="centerX" id="MTU-sf-cKW"/>
+                            <constraint firstItem="rRd-tJ-0wB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Mso-Z4-A8g"/>
+                            <constraint firstItem="jbk-Dm-TXz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="PY1-v5-SV6"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="top" secondItem="jbk-Dm-TXz" secondAttribute="bottom" constant="65" id="QXD-5j-39w"/>
+                            <constraint firstItem="TFe-KF-WKr" firstAttribute="centerX" secondItem="jbk-Dm-TXz" secondAttribute="centerX" id="Szt-XG-MSh"/>
+                            <constraint firstItem="TFe-KF-WKr" firstAttribute="leading" secondItem="rRd-tJ-0wB" secondAttribute="leading" id="TWN-U8-fKK"/>
+                            <constraint firstItem="x38-Xf-1GZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="XTY-Gl-7Ea"/>
+                            <constraint firstItem="B5O-0g-IUW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="Yhk-JW-ujH"/>
+                            <constraint firstItem="TFe-KF-WKr" firstAttribute="top" secondItem="DFC-h6-so7" secondAttribute="bottom" constant="20" id="c50-sA-9MF"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="leading" secondItem="TFe-KF-WKr" secondAttribute="leading" id="fFm-dL-9Mv"/>
+                            <constraint firstItem="DFC-h6-so7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sIk-IY-xto"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="R5t-pQ-Na2" appends="YES" id="DvC-7E-tag"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="passwordTF" destination="TFe-KF-WKr" id="TDx-tf-xJG"/>
+                        <outlet property="textField" destination="TFe-KF-WKr" id="zla-Kr-IlY"/>
+                        <outlet property="usernameTF" destination="DFC-h6-so7" id="lFb-if-E4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="R5t-pQ-Na2">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="Up5-Pp-I6B"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
@@ -82,5 +130,6 @@
     <resources>
         <image name="Icon" width="173" height="170"/>
         <image name="Loginbox" width="342" height="55"/>
+        <image name="textbox" width="342" height="55"/>
     </resources>
 </document>
